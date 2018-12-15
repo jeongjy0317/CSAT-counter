@@ -1,0 +1,62 @@
+/*!
+ * M4xtat3 (https://github.com/jeongjy0317/CSAT-counter)
+ * Copyright 2018 M4xtat3 (https://jeongjy.kr)
+ * Licensed under MIT (https://github.com/jeongjy0317/CSAT-counter/blob/master/LICENSE)
+ * Right of NanumSquare font is in Naver(https://hangeul.naver.com/)
+*/
+
+body { 
+    /* background: url(bg.jpg) no-repeat center center fixed;  */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.text_border {
+    text-shadow: 0 0 2px #f00;
+    -moz-text-shadow: 0 0 2px #f00;
+    -webkit-text-shadow: 0 0 2px #f00;
+}
+
+.img-blur:before{
+    content: '';
+    position: absolute;
+    top: 0; left:0; right:0; bottom:0;
+    background: inherit;
+    z-index:-1;
+    filter: blur(); 
+    -webkit-filter: blur(); 
+    -moz-filter: blur();
+    -o-filter: blur();
+    -ms-filter: blur();
+    filter: url(#blur);
+}
+
+a{
+    color:black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+a:hover{
+    color:yellow;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/* Font file gets own property by Naver nanum foundation */
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+body        { font-family: 'NanumSquare', sans-serif; }
+.normal     { font-weight: 400 }
+.bold       { font-weight: 700 }
+.bolder     { font-weight: 800 }
+.light      { font-weight: 300 }
+
+@media only screen and (max-width: 485px) {
+    .text-size-title{
+        font-size:4vh;
+    }
+    .text-size-passage{
+        font-size:3vh;
+    }
+}

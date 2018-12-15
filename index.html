@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        * M4xtat3 (https://github.com/jeongjy0317/CSAT-counter)
+        * Copyright 2018 M4xtat3 (https://jeongjy.kr)
+        * Licensed under MIT (https://github.com/jeongjy0317/CSAT-counter/blob/master/LICENSE)
+        * Right of NanumSquare font is in Naver(https://hangeul.naver.com/)
+    -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hello, 수능</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <filter id="blur">
+            <feGaussianBlur stdDeviation="6" />
+        </filter>
+    </svg>
+    <style>
+    </style>
+</head>
+<body class="img-blur overlay">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="h1 text-size-title"><strong>2020 수능 대박</strong>기원 타이머</h1>
+            </div>
+            <div class="col-md-12">
+                <h3 style="padding-right: 0;" class="text-size-passage">대학 수능 능력평가까지 <strong id="l-day"></strong>일 <strong id="l-hour"></strong>시간 <strong id="l-minute"></strong>분 <strong id="l-second"></strong>초 남았습니다.</h3>
+                <br>
+            </div>
+            <div class="col-md-12">
+                <hr>
+            </div>
+            <div class="col-md-12">
+                <p align="center">College Scholastic Ability Test</p>
+            </div>
+        </div>
+    </div>
+    <script language=JavaScript>
+        var x = setInterval(function() {
+            document.getElementById("l-day").innerHTML = getLeft(1);
+            document.getElementById("l-hour").innerHTML = getLeft(2);
+            document.getElementById("l-minute").innerHTML = getLeft(3);
+            document.getElementById("l-second").innerHTML = getLeft(4);
+        });
+    </script>
+</body>
+</html>
