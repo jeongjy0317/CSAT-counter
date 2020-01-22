@@ -5,7 +5,7 @@
 
 function getLeft(getType){
     // Set datetime here
-    var countDownDate = new Date("November 14, 2019 08:40:00").getTime();
+    var countDownDate = new Date("November 19, 2020 08:40:00").getTime();
     var now = new Date().getTime();
     var distance = countDownDate - now;
     var d = Math.floor(distance / (1000 * 60 * 60 * 24));
